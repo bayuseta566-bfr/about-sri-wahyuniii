@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blue Memories</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/icon.png">
+
+</head>
+
+<body>
+
+    <!-- Floating Background -->
+    <div class="background">
+        <div class="overlay"></div>
+
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+
+        <div class="flower flower1"></div>
+        <div class="flower flower2"></div>
+        <div class="flower flower3"></div>
+
+        <div class="wave"></div>
+
+    </div>
+
+    <!-- Login Box -->
+    <main class="container">
+
+        <section class="login-card">
+
+            <div class="logo">
+
+                💙
+
+            </div>
+
+            <h1>
+                Blue Memories
+            </h1>
+
+            <p class="subtitle">
+                Every beautiful story begins with a special date.
+            </p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="DDMMYYYY"
+                        maxlength="8"
+                        autocomplete="off"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit">
+
+                    Open The Story
+
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            "The sky remembers every sunset,
+            the sea remembers every wave,
+            and I remember you."
+
+        </p>
+
+    </footer>
+
+    <!-- Audio -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="audio/song.mp3" type="audio/mp3">
+
+    </audio>
+
+    <!-- JS -->
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
