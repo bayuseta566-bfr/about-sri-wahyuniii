@@ -20,185 +20,55 @@ if(localStorage.getItem("blueMemoriesLogin")!=="true"){
         ELEMENT
 ==============================*/
 
-const envelope=document.getElementById("envelope");
-
 const openButton=document.getElementById("openLetter");
 
-const letterTitle=document.querySelector(".letter h2");
-
-const letterText=document.querySelector(".letter p");
-
-const letterDate=document.querySelector(".letter .date");
+const letter=document.getElementById("letter");
 
 
 
 /*==============================
-        LETTER DATA
-==============================*/
-
-const letters=[
-
-{
-
-date:"28 June 2026",
-
-title:"Dear You,",
-
-text:`There are many things
-I never had the courage to say.
-
-Perhaps because
-some feelings become
-more beautiful
-when they remain inside a letter.
-
-Thank you
-for becoming part
-of my sky,
-my sea,
-and every blue memory.`
-
-},
-
-{
-
-date:"A Quiet Afternoon",
-
-title:"To The Blue Sky,",
-
-text:`Every sky reminds me
-that distance
-never changes
-the beauty of a memory.
-
-Some people
-become home,
-even from afar.`
-
-},
-
-{
-
-date:"At The Beach",
-
-title:"Dear Ocean,",
-
-text:`Every wave
-returns to the shore.
-
-Just like every memory
-always finds
-its way back
-to my heart.`
-
-},
-
-{
-
-date:"Until Someday",
-
-title:"One Last Letter,",
-
-text:`Maybe one day
-you'll read
-every page
-I've written.
-
-If that day comes,
-
-I hope you smile.`
-
-}
-
-];
-
-
-
-/*==============================
-        TYPEWRITER
-==============================*/
-
-let current=0;
-
-function typeWriter(text){
-
-    letterText.innerHTML="";
-
-    let i=0;
-
-    const typing=setInterval(()=>{
-
-        if(i>=text.length){
-
-            clearInterval(typing);
-
-            return;
-
-        }
-
-        if(text.charAt(i)==="\n"){
-
-            letterText.innerHTML+="<br>";
-
-        }else{
-
-            letterText.innerHTML+=text.charAt(i);
-
-        }
-
-        i++;
-
-    },22);
-
-}
-
-
-
-/*==============================
-        SHOW LETTER
-==============================*/
-
-function showLetter(index){
-
-    letterDate.innerText=letters[index].date;
-
-    letterTitle.innerText=letters[index].title;
-
-    typeWriter(letters[index].text);
-
-}
-
-
-
-/*==============================
-        OPEN
+        OPEN LETTER
 ==============================*/
 
 let opened=false;
 
-openButton.addEventListener("click",()=>{
+function openLetter(){
 
-    if(!opened){
+    if(opened) return;
 
-        envelope.classList.add("open");
+    opened=true;
 
-        openButton.innerHTML="Next Letter 💙";
+    letter.classList.add("show");
 
-        opened=true;
+    openButton.classList.add("hide");
 
-        showLetter(current);
 
-    }else{
 
-        current++;
+    setTimeout(()=>{
 
-        if(current>=letters.length){
+        openButton.style.display="none";
 
-            current=0;
+    },500);
 
-        }
+}
 
-        showLetter(current);
+
+
+openButton.addEventListener("click",openLetter);
+
+
+
+/*==============================
+        KEYBOARD
+==============================*/
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.code==="Space" || e.code==="Enter"){
+
+        e.preventDefault();
+
+        openLetter();
 
     }
 
@@ -229,7 +99,7 @@ window.addEventListener("scroll",()=>{
 
 
 /*==============================
-        FADE
+        FADE ANIMATION
 ==============================*/
 
 const observer=new IntersectionObserver((entries)=>{
@@ -248,7 +118,7 @@ entry.target.classList.add("show");
 
 document.querySelectorAll(
 
-".hero,.letter-area,.collection,.quote,.card"
+".hero,.quote"
 
 ).forEach(el=>{
 
@@ -272,6 +142,8 @@ topButton.innerHTML="↑";
 
 document.body.appendChild(topButton);
 
+
+
 topButton.onclick=()=>{
 
 window.scrollTo({
@@ -284,35 +156,17 @@ behavior:"smooth"
 
 };
 
+
+
 window.addEventListener("scroll",()=>{
 
-if(window.scrollY>500){
+if(window.scrollY>450){
 
 topButton.classList.add("showTop");
 
 }else{
 
 topButton.classList.remove("showTop");
-
-}
-
-});
-
-
-
-/*==============================
-        ACTIVE NAV
-==============================*/
-
-document.querySelectorAll("nav a")
-
-.forEach(link=>{
-
-if(link.href===window.location.href){
-
-link.style.color="#dff6ff";
-
-link.style.fontWeight="600";
 
 }
 
@@ -337,78 +191,56 @@ footer.innerHTML=
 
 
 /*==============================
-        CARD CLICK
+        ACTIVE NAVBAR
 ==============================*/
 
-document.querySelectorAll(".card")
+document.querySelectorAll("nav a")
 
-.forEach((card,index)=>{
+.forEach(link=>{
 
-card.style.cursor="pointer";
+if(link.href===window.location.href){
 
-card.addEventListener("click",()=>{
+link.classList.add("active");
 
-current=index;
-
-showLetter(current);
-
-envelope.classList.add("open");
-
-opened=true;
-
-openButton.innerHTML="Next Letter 💙";
-
-window.scrollTo({
-
-top:250,
-
-behavior:"smooth"
-
-});
-
-});
+}
 
 });
 
 
 
 /*==============================
-        KEYBOARD
+        LILY EFFECT
 ==============================*/
 
-document.addEventListener("keydown",(e)=>{
+function createLily(){
 
-if(!opened) return;
+const lily=document.createElement("div");
 
-if(e.key==="ArrowRight"){
+lily.className="lily";
 
-current++;
+lily.innerHTML="✿";
 
-if(current>=letters.length){
+lily.style.left=Math.random()*100+"vw";
 
-current=0;
+lily.style.fontSize=(18+Math.random()*12)+"px";
 
-}
+lily.style.animationDuration=
 
-showLetter(current);
+(8+Math.random()*5)+"s";
 
-}
+document.body.appendChild(lily);
 
-if(e.key==="ArrowLeft"){
+setTimeout(()=>{
 
-current--;
+lily.remove();
 
-if(current<0){
-
-current=letters.length-1;
+},13000);
 
 }
 
-showLetter(current);
 
-}
 
-});
+setInterval(createLily,3500);
 
 
 
@@ -422,14 +254,22 @@ console.log(
 
 "%cBlue Memories",
 
-"font-size:30px;color:#5fb5ff;font-weight:bold"
+"font-size:28px;color:#6dbdff;font-weight:bold"
 
 );
 
 console.log(
 
-"%cLetters keep what mouths cannot say.",
+"%cLetters",
 
-"color:#cfe8ff"
+"font-size:18px;color:white"
+
+);
+
+console.log(
+
+"%cSome memories live better in words.",
+
+"color:#d7efff"
 
 );
