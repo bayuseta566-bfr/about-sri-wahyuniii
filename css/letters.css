@@ -9,11 +9,11 @@
         GOOGLE FONT
 ==============================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
 
 /*==============================
-        RESET
+            RESET
 ==============================*/
 
 *{
@@ -36,25 +36,18 @@ body{
 
     font-family:'Poppins',sans-serif;
 
-    color:white;
+    color:#ffffff;
 
     overflow-x:hidden;
 
     min-height:100vh;
 
-    background:
-    linear-gradient(
-
+    background:linear-gradient(
         180deg,
-
-        #5C9BF5 0%,
-
-        #4C8FEA 30%,
-
-        #3575D8 65%,
-
-        #234EA8 100%
-
+        #8ecbff 0%,
+        #71b8f7 35%,
+        #4f96e7 70%,
+        #2f72d1 100%
     );
 
 }
@@ -73,21 +66,21 @@ body{
 
 ::-webkit-scrollbar-track{
 
-    background:#d6ecff;
+    background:#e8f6ff;
 
 }
 
 ::-webkit-scrollbar-thumb{
 
-    background:#4f9dff;
+    background:#5eaaf4;
 
-    border-radius:50px;
+    border-radius:30px;
 
 }
 
 ::-webkit-scrollbar-thumb:hover{
 
-    background:#2f86ff;
+    background:#3b8ee7;
 
 }
 
@@ -105,85 +98,50 @@ body{
 
     overflow:hidden;
 
-    z-index:-5;
-
-}
-
-
-
-/* Soft Glow */
-
-.background::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:420px;
-
-    height:420px;
-
-    top:-140px;
-
-    left:-140px;
-
-    border-radius:50%;
-
-    background:
-
-    radial-gradient(
-
-        circle,
-
-        rgba(255,255,255,.14),
-
-        transparent
-
-    );
-
-}
-
-.background::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:360px;
-
-    height:360px;
-
-    bottom:-120px;
-
-    right:-120px;
-
-    border-radius:50%;
-
-    background:
-
-    radial-gradient(
-
-        circle,
-
-        rgba(255,255,255,.10),
-
-        transparent
-
-    );
+    z-index:-10;
 
 }
 
 
 
 /*==============================
-        CLOUD
+        LIGHT EFFECT
+==============================*/
+
+.gradient{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at top left,
+
+    rgba(255,255,255,.22),
+
+    transparent 35%),
+
+
+    radial-gradient(circle at bottom right,
+
+    rgba(255,255,255,.12),
+
+    transparent 45%);
+
+}
+
+
+
+/*==============================
+            CLOUD
 ==============================*/
 
 .cloud{
 
     position:absolute;
 
-    background:rgba(255,255,255,.70);
+    background:rgba(255,255,255,.72);
 
     border-radius:100px;
 
@@ -207,7 +165,7 @@ body{
 
 
 
-/* Cloud 1 */
+/* CLOUD 1 */
 
 .cloud1{
 
@@ -225,11 +183,11 @@ body{
 
 .cloud1::before{
 
-    width:70px;
+    width:75px;
 
-    height:70px;
+    height:75px;
 
-    top:-25px;
+    top:-28px;
 
     left:22px;
 
@@ -243,67 +201,67 @@ body{
 
     top:-35px;
 
-    right:22px;
-
-}
-
-
-
-/* Cloud 2 */
-
-.cloud2{
-
-    width:150px;
-
-    height:50px;
-
-    top:190px;
-
-    left:-240px;
-
-    animation:cloudMove 60s linear infinite;
-
-    animation-delay:-20s;
-
-}
-
-.cloud2::before{
-
-    width:60px;
-
-    height:60px;
-
-    top:-20px;
-
-    left:20px;
-
-}
-
-.cloud2::after{
-
-    width:70px;
-
-    height:70px;
-
-    top:-25px;
-
     right:18px;
 
 }
 
 
 
-/* Cloud 3 */
+/* CLOUD 2 */
 
-.cloud3{
+.cloud2{
 
-    width:230px;
+    width:220px;
 
     height:70px;
 
+    top:200px;
+
+    left:-280px;
+
+    animation:cloudMove 60s linear infinite;
+
+    animation-delay:-15s;
+
+}
+
+.cloud2::before{
+
+    width:85px;
+
+    height:85px;
+
+    top:-30px;
+
+    left:25px;
+
+}
+
+.cloud2::after{
+
+    width:95px;
+
+    height:95px;
+
+    top:-36px;
+
+    right:24px;
+
+}
+
+
+
+/* CLOUD 3 */
+
+.cloud3{
+
+    width:160px;
+
+    height:55px;
+
     top:150px;
 
-    left:-300px;
+    left:-180px;
 
     animation:cloudMove 75s linear infinite;
 
@@ -313,32 +271,32 @@ body{
 
 .cloud3::before{
 
-    width:90px;
+    width:65px;
 
-    height:90px;
+    height:65px;
 
-    top:-30px;
+    top:-22px;
 
-    left:30px;
+    left:18px;
 
 }
 
 .cloud3::after{
 
-    width:100px;
+    width:80px;
 
-    height:100px;
+    height:80px;
 
-    top:-35px;
+    top:-30px;
 
-    right:25px;
+    right:18px;
 
 }
 
 
 
 /*==============================
-        NAVBAR
+            NAVBAR
 ==============================*/
 
 nav{
@@ -359,17 +317,15 @@ nav{
 
     align-items:center;
 
-    background:rgba(15,65,130,.25);
+    background:rgba(27,83,163,.20);
 
     backdrop-filter:blur(18px);
 
-    border-bottom:1px solid rgba(255,255,255,.12);
+    border-bottom:1px solid rgba(255,255,255,.15);
 
     z-index:999;
 
 }
-
-
 
 .logo{
 
@@ -379,53 +335,49 @@ nav{
 
     font-weight:700;
 
-    color:white;
+    color:#ffffff;
 
 }
-
-
 
 nav ul{
 
-    list-style:none;
-
     display:flex;
 
-    gap:30px;
+    list-style:none;
+
+    gap:28px;
 
 }
-
-
 
 nav ul li a{
 
-    color:white;
-
     text-decoration:none;
+
+    color:#ffffff;
 
     transition:.35s;
 
-    text-shadow:0 2px 10px rgba(0,0,0,.30);
-
 }
 
-nav ul li a:hover{
+nav ul li a:hover,
 
-    color:#dff5ff;
+nav ul li a.active{
+
+    color:#dff6ff;
 
 }
 
 
 
 /*==============================
-        HERO
+            HERO
 ==============================*/
 
 .hero{
 
-    text-align:center;
+    padding:170px 10% 100px;
 
-    padding:180px 10% 100px;
+    text-align:center;
 
     animation:fadeUp 1s ease;
 
@@ -435,31 +387,69 @@ nav ul li a:hover{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:72px;
+    font-size:76px;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
     text-shadow:
 
-        0 8px 30px rgba(0,0,0,.35);
+    0 10px 30px rgba(0,0,0,.18);
 
 }
 
 .hero p{
 
-    max-width:760px;
-
-    margin:auto;
+    font-size:20px;
 
     line-height:2;
 
-    font-size:18px;
+    color:#eef8ff;
 
-    color:#eefaff;
+    margin-bottom:45px;
 
-    text-shadow:
+}
 
-        0 2px 12px rgba(0,0,0,.25);
+
+
+/*==============================
+        BUTTON
+==============================*/
+
+#openLetter{
+
+    border:none;
+
+    padding:16px 42px;
+
+    border-radius:40px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#2d70cb;
+
+    background:#ffffff;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 12px 28px rgba(0,0,0,.18);
+
+}
+
+#openLetter:hover{
+
+    transform:
+
+    translateY(-4px);
+
+    box-shadow:
+
+    0 20px 35px rgba(0,0,0,.22);
 
 }
 
@@ -493,7 +483,7 @@ nav ul li a:hover{
 
         opacity:0;
 
-        transform:translateY(60px);
+        transform:translateY(40px);
 
     }
 
@@ -515,322 +505,92 @@ nav ul li a:hover{
 
 
 /*==============================
-        LETTER AREA
+        LETTER SECTION
 ==============================*/
 
-.letter-area{
-
-    width:100%;
-
-    padding:30px 8% 120px;
+.letter-section{
 
     display:flex;
-
-    flex-direction:column;
 
     justify-content:center;
 
     align-items:center;
 
-}
-
-
-
-/*==============================
-        ENVELOPE
-==============================*/
-
-.envelope{
-
-    position:relative;
-
-    width:420px;
-
-    height:280px;
-
-    margin:auto;
+    padding:20px 10% 120px;
 
 }
 
 
 
 /*==============================
-        ENVELOPE BODY
-==============================*/
-
-.envelope-body{
-
-    position:absolute;
-
-    bottom:0;
-
-    left:0;
-
-    width:100%;
-
-    height:100%;
-
-    background:#eef5ff;
-
-    border-radius:12px;
-
-    overflow:hidden;
-
-    z-index:5;
-
-    box-shadow:
-
-    0 20px 40px rgba(0,0,0,.18);
-
-}
-
-
-
-/*==============================
-        ENVELOPE TOP
-==============================*/
-
-.envelope-top{
-
-    position:absolute;
-
-    top:0;
-
-    left:0;
-
-    width:100%;
-
-    height:160px;
-
-    background:linear-gradient(
-
-        145deg,
-
-        #e6f2ff,
-
-        #bfdcff
-
-    );
-
-    clip-path:polygon(
-
-        0 0,
-
-        50% 100%,
-
-        100% 0
-
-    );
-
-    transform-origin:top;
-
-    transition:.6s;
-
-    z-index:5;
-
-}
-
-
-
-/*==============================
-        LETTER
+        LETTER PAPER
 ==============================*/
 
 .letter{
 
-    position:absolute;
+    width:100%;
 
-    left:50%;
+    max-width:760px;
 
-    top:120px;
+    background:#fdfbf6;
 
-    transform:translateX(-50%);
+    color:#3b4656;
 
-    width:340px;
+    border-radius:18px;
 
-    height:240px;
-
-    background:white;
-
-    border-radius:12px;
-
-    padding:30px;
-
-    z-index:2;
-
-    transition:.8s ease;
+    padding:70px 65px;
 
     box-shadow:
 
-    0 10px 30px rgba(0,0,0,.12);
+        0 25px 60px rgba(0,0,0,.18);
+
+    position:relative;
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:1s ease;
+
+    overflow:hidden;
 
 }
 
 
 
 /*==============================
-        DATE
+        SHOW LETTER
 ==============================*/
 
-.letter .date{
+.letter.show{
 
-    display:inline-block;
+    opacity:1;
 
-    margin-bottom:18px;
-
-    padding:7px 18px;
-
-    border-radius:30px;
-
-    background:#eef6ff;
-
-    color:#4f89d9;
-
-    font-size:13px;
+    transform:translateY(0);
 
 }
 
 
 
 /*==============================
-        LETTER TITLE
+        PAPER TEXTURE
 ==============================*/
 
-.letter h2{
-
-    font-family:'Cormorant Garamond',serif;
-
-    color:#2c4d74;
-
-    font-size:38px;
-
-    margin-bottom:18px;
-
-}
-
-
-
-/*==============================
-        LETTER TEXT
-==============================*/
-
-.letter p{
-
-    color:#516b86;
-
-    line-height:2;
-
-    font-size:15px;
-
-}
-
-
-
-/*==============================
-        OPEN STATE
-==============================*/
-
-.envelope.open .envelope-top{
-
-    transform:rotateX(180deg);
-
-}
-
-
-
-.envelope.open .letter{
-
-    transform:
-
-    translateX(-50%)
-
-    translateY(-170px);
-
-}
-
-
-
-/*==============================
-        BUTTON
-==============================*/
-
-#openLetter{
-
-    padding:16px 42px;
-
-    border:none;
-
-    border-radius:50px;
-
-    background:white;
-
-    color:#2f74c9;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-    box-shadow:
-
-        0 15px 35px rgba(0,0,0,.15);
-
-}
-
-
-
-#openLetter:hover{
-
-    background:#dff2ff;
-
-    transform:translateY(-5px);
-
-}
-
-
-
-/*==============================
-        HOVER
-==============================*/
-
-.envelope:hover{
-
-    transform:translateY(-8px);
-
-}
-
-
-
-/*==============================
-        SHINE EFFECT
-==============================*/
-
-.envelope::before{
+.letter::before{
 
     content:"";
 
     position:absolute;
 
-    width:220px;
-
-    height:220px;
-
-    top:-120px;
-
-    right:-120px;
-
-    border-radius:50%;
+    inset:0;
 
     background:
 
     radial-gradient(
 
-        rgba(255,255,255,.25),
+        rgba(0,0,0,.02),
 
-        transparent
+        transparent 70%
 
     );
 
@@ -840,198 +600,135 @@ nav ul li a:hover{
 
 
 
-/*==============================
-        FLOAT
-==============================*/
-
-.envelope{
-
-    animation:floatEnvelope 6s ease-in-out infinite;
-
-}
-
-
-
-@keyframes floatEnvelope{
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-10px);
-
-    }
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-}
-
-
-
-/*==============================
-        OPEN BUTTON ACTIVE
-==============================*/
-
-#openLetter:active{
-
-    transform:scale(.96);
-
-}
-
-/*==========================================================
-    BLUE MEMORIES
-    LETTERS.CSS
-    PART 3 (FINAL)
-==========================================================*/
-
-
-/*==============================
-        COLLECTION
-==============================*/
-
-.collection{
-
-    width:100%;
-
-    max-width:1400px;
-
-    margin:auto;
-
-    padding:20px 8% 120px;
-
-}
-
-.collection h2{
-
-    text-align:center;
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:54px;
-
-    margin-bottom:60px;
-
-    text-shadow:0 6px 20px rgba(0,0,0,.25);
-
-}
-
-
-
-/*==============================
-        CARD GRID
-==============================*/
-
-.cards{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:35px;
-
-}
-
-
-
-/*==============================
-        CARD
-==============================*/
-
-.card{
-
-    position:relative;
-
-    padding:35px;
-
-    border-radius:25px;
-
-    background:rgba(255,255,255,.14);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.18);
-
-    box-shadow:
-
-        0 18px 45px rgba(0,0,0,.15);
-
-    transition:.4s;
-
-    overflow:hidden;
-
-}
-
-
-
-.card::before{
+.letter::after{
 
     content:"";
 
     position:absolute;
 
-    width:220px;
+    top:0;
 
-    height:220px;
+    left:55px;
 
-    top:-120px;
+    width:2px;
 
-    right:-120px;
+    height:100%;
 
-    border-radius:50%;
-
-    background:
-
-    radial-gradient(
-
-        rgba(255,255,255,.18),
-
-        transparent
-
-    );
+    background:rgba(95,150,220,.12);
 
 }
 
 
 
-.card:hover{
+/*==============================
+        DATE
+==============================*/
 
-    transform:
+.letter-date{
 
-        translateY(-10px)
+    font-size:14px;
 
-        rotate(-1deg);
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#7d8ea8;
+
+    margin-bottom:25px;
 
 }
 
 
 
-.card h3{
+/*==============================
+        TITLE
+==============================*/
+
+.letter h2{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:34px;
+    font-size:52px;
 
-    margin-bottom:20px;
+    font-weight:600;
 
-    color:white;
+    color:#305f98;
+
+    margin-bottom:35px;
 
 }
 
 
 
-.card p{
+/*==============================
+        CONTENT
+==============================*/
 
-    line-height:1.9;
+.letter p{
 
-    color:#eefaff;
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:28px;
+
+    line-height:2;
+
+    color:#505b68;
+
+    text-align:justify;
+
+}
+
+
+
+/*==============================
+        DROP CAP
+==============================*/
+
+.letter p::first-letter{
+
+    float:left;
+
+    font-size:72px;
+
+    line-height:60px;
+
+    padding-right:10px;
+
+    color:#5f9be4;
+
+    font-weight:700;
+
+}
+
+
+
+/*==============================
+        SIGNATURE
+==============================*/
+
+.signature{
+
+    margin-top:60px;
+
+    text-align:right;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    color:#4b6d99;
+
+    line-height:1.8;
+
+}
+
+
+
+.signature span{
+
+    font-size:36px;
+
+    font-weight:600;
 
 }
 
@@ -1043,41 +740,110 @@ nav ul li a:hover{
 
 .quote{
 
-    padding:20px 10% 120px;
+    padding:0 10% 120px;
 
     text-align:center;
 
 }
 
-.quote h2{
 
-    max-width:900px;
+
+.quote p{
+
+    max-width:760px;
 
     margin:auto;
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:42px;
+    font-size:34px;
 
     line-height:1.8;
 
+    color:white;
+
     text-shadow:
 
-        0 8px 25px rgba(0,0,0,.25);
+        0 8px 25px rgba(0,0,0,.20);
 
 }
 
 
 
 /*==============================
-        FOOTER
+        LETTER HOVER
+==============================*/
+
+.letter:hover{
+
+    transform:
+
+        translateY(-8px);
+
+    box-shadow:
+
+        0 35px 80px rgba(0,0,0,.22);
+
+}
+
+
+
+/*==============================
+        BUTTON AFTER OPEN
+==============================*/
+
+#openLetter.hide{
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transform:translateY(-20px);
+
+}
+
+
+
+/*==============================
+        FADE EFFECT
+==============================*/
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*==========================================================
+    BLUE MEMORIES
+    LETTERS.CSS
+    PART 3 (FINAL)
+==========================================================*/
+
+
+/*==============================
+            FOOTER
 ==============================*/
 
 footer{
 
-    text-align:center;
-
     padding:35px;
+
+    text-align:center;
 
     background:rgba(255,255,255,.08);
 
@@ -1089,9 +855,11 @@ footer{
 
 footer p{
 
-    color:#eefaff;
+    color:#eef8ff;
 
     font-size:15px;
+
+    letter-spacing:1px;
 
 }
 
@@ -1117,7 +885,7 @@ footer p{
 
     border-radius:50%;
 
-    background:#4e95ff;
+    background:#4c96ee;
 
     color:white;
 
@@ -1125,17 +893,17 @@ footer p{
 
     cursor:pointer;
 
-    transition:.35s;
-
     opacity:0;
 
     pointer-events:none;
 
-    z-index:9999;
+    transition:.35s;
 
     box-shadow:
 
-        0 12px 25px rgba(0,0,0,.25);
+    0 12px 25px rgba(0,0,0,.20);
+
+    z-index:999;
 
 }
 
@@ -1156,82 +924,148 @@ footer p{
 
 
 /*==============================
-        FADE
+        FLOATING LILY
 ==============================*/
 
-.fade{
+.lily{
 
-    opacity:0;
+    position:fixed;
 
-    transform:translateY(60px);
+    top:-50px;
 
-    transition:1s;
+    width:24px;
+
+    height:24px;
+
+    pointer-events:none;
+
+    opacity:.75;
+
+    animation:lilyFall linear forwards;
+
+    z-index:-1;
 
 }
 
-.fade.show{
+@keyframes lilyFall{
 
-    opacity:1;
+    from{
 
-    transform:translateY(0);
+        transform:
+
+        translateY(-50px)
+
+        rotate(0deg);
+
+        opacity:.9;
+
+    }
+
+    to{
+
+        transform:
+
+        translateY(110vh)
+
+        rotate(360deg);
+
+        opacity:0;
+
+    }
 
 }
 
 
 
 /*==============================
-        TEXT SELECTION
+        SOFT SHADOW
 ==============================*/
 
-::selection{
+.hero h1,
 
-    background:#b8e3ff;
+.quote p{
 
-    color:#16467d;
+    text-shadow:
+
+    0 10px 25px rgba(0,0,0,.18);
 
 }
 
 
 
 /*==============================
-        TABLET
+        LETTER SELECTION
 ==============================*/
 
-@media(max-width:992px){
+.letter::selection{
 
-.collection h2{
+    background:#cfe8ff;
 
-    font-size:46px;
-
-}
-
-.cards{
-
-    grid-template-columns:repeat(2,1fr);
+    color:#244f85;
 
 }
 
-.envelope{
+.letter *::selection{
 
-    width:360px;
+    background:#cfe8ff;
 
-    height:250px;
+    color:#244f85;
+
+}
+
+
+
+/*==============================
+        SMOOTH EFFECT
+==============================*/
+
+body,
+
+.letter,
+
+button,
+
+nav a{
+
+    transition:.35s;
+
+}
+
+
+
+/*==============================
+        RESPONSIVE
+==============================*/
+
+@media(max-width:1000px){
+
+.hero h1{
+
+    font-size:60px;
 
 }
 
 .letter{
 
-    width:300px;
+    padding:60px 45px;
+
+}
+
+.letter h2{
+
+    font-size:46px;
+
+}
+
+.letter p{
+
+    font-size:25px;
 
 }
 
 }
 
 
-
-/*==============================
-        MOBILE
-==============================*/
 
 @media(max-width:768px){
 
@@ -1257,7 +1091,7 @@ nav ul{
 
 .hero{
 
-    padding:170px 8% 80px;
+    padding:160px 8% 80px;
 
 }
 
@@ -1269,69 +1103,63 @@ nav ul{
 
 .hero p{
 
-    font-size:16px;
-
-}
-
-.envelope{
-
-    width:310px;
-
-    height:220px;
+    font-size:17px;
 
 }
 
 .letter{
 
-    width:260px;
+    padding:45px 35px;
 
-    padding:22px;
+}
+
+.letter::after{
+
+    left:35px;
 
 }
 
 .letter h2{
 
-    font-size:30px;
+    font-size:40px;
 
 }
 
 .letter p{
 
-    font-size:14px;
+    font-size:22px;
+
+    line-height:1.9;
 
 }
 
-.cards{
+.signature{
 
-    grid-template-columns:1fr;
-
-}
-
-.collection h2{
-
-    font-size:40px;
+    font-size:24px;
 
 }
 
-.quote h2{
+.signature span{
 
     font-size:30px;
 
 }
 
+.quote p{
+
+    font-size:28px;
+
+}
+
 }
 
 
 
-/*==============================
-        SMALL PHONE
-==============================*/
-
-@media(max-width:480px){
+@media(max-width:520px){
 
 .logo{
 
-    font-size:25px;
+    font-size:26px;
 
 }
 
@@ -1347,55 +1175,85 @@ nav ul{
 
 }
 
-.envelope{
+#openLetter{
 
-    width:280px;
+    width:100%;
 
-    height:200px;
+    max-width:260px;
 
 }
 
 .letter{
 
-    width:235px;
+    padding:35px 25px;
 
-    padding:20px;
+    border-radius:15px;
+
+}
+
+.letter::after{
+
+    left:25px;
+
+}
+
+.letter-date{
+
+    font-size:12px;
 
 }
 
 .letter h2{
 
-    font-size:26px;
+    font-size:34px;
 
 }
 
 .letter p{
 
-    font-size:13px;
+    font-size:19px;
+
+    line-height:1.8;
 
 }
 
-#openLetter{
+.letter p::first-letter{
 
-    width:100%;
+    font-size:54px;
 
-}
-
-.collection h2{
-
-    font-size:34px;
+    line-height:45px;
 
 }
 
-.quote h2{
+.signature{
 
-    font-size:24px;
+    margin-top:40px;
+
+    font-size:20px;
 
 }
 
-footer p{
+.signature span{
 
-    font-size:13px;
+    font-size:26px;
+
+}
+
+.quote{
+
+    padding:0 8% 90px;
+
+}
+
+.quote p{
+
+    font-size:22px;
+
+}
+
+footer{
+
+    padding:28px;
 
 }
 
@@ -1404,84 +1262,29 @@ footer p{
 
 
 /*==============================
-        EXTRA HOVER
+        EXTRA ANIMATION
 ==============================*/
 
-.card:hover h3{
+nav a:hover{
 
-    color:#dff6ff;
-
-}
-
-.card:hover{
-
-    box-shadow:
-
-        0 25px 60px rgba(0,0,0,.22);
+    transform:translateY(-2px);
 
 }
 
-.quote h2{
+#openLetter:active{
+
+    transform:scale(.96);
+
+}
+
+.letter:hover{
 
     transition:.4s;
 
 }
 
-.quote:hover h2{
-
-    transform:scale(1.02);
-
-}
-
 
 
 /*==============================
-        SMOOTH TRANSITION
+        END
 ==============================*/
-
-body,
-button,
-.card,
-.envelope,
-.letter{
-
-    transition:.35s;
-
-}
-
-.envelope-front{
-
-    position:absolute;
-
-    bottom:0;
-
-    left:0;
-
-    width:100%;
-
-    height:58%;
-
-    background:#dcecff;
-
-    clip-path:polygon(
-
-        0 0,
-
-        50% 70%,
-
-        100% 0,
-
-        100% 100%,
-
-        0 100%
-
-    );
-
-    z-index:8;
-
-}
-
-.envelope-top{
-
-    z-index:10;
-}
