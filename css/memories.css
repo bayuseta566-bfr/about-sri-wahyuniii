@@ -1,0 +1,1659 @@
+/*==========================================================
+                BLUE MEMORIES
+                memories.css
+                PART 1
+==========================================================*/
+
+
+/*==============================
+        GOOGLE FONT
+==============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+
+/*==============================
+            RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        180deg,
+        #9fd7ff 0%,
+        #77c0ff 35%,
+        #4fa4f3 70%,
+        #2d7fe4 100%
+    );
+
+}
+
+
+/*==============================
+        SCROLLBAR
+==============================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#d9f0ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#5daff7;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#338ce8;
+
+}
+
+
+
+/*==============================
+        BACKGROUND
+==============================*/
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-100;
+
+}
+
+
+
+/*==============================
+        LIGHT OVERLAY
+==============================*/
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+
+        circle at top left,
+
+        rgba(255,255,255,.25),
+
+        transparent 35%
+
+    ),
+
+    radial-gradient(
+
+        circle at bottom right,
+
+        rgba(255,255,255,.12),
+
+        transparent 45%
+
+    );
+
+}
+
+
+
+/*==============================
+            CLOUD
+==============================*/
+
+.cloud{
+
+    position:absolute;
+
+    background:
+
+    rgba(255,255,255,.72);
+
+    border-radius:100px;
+
+    filter:blur(1px);
+
+}
+
+.cloud::before,
+
+.cloud::after{
+
+    content:"";
+
+    position:absolute;
+
+    background:inherit;
+
+    border-radius:50%;
+
+}
+
+
+
+/* CLOUD 1 */
+
+.cloud1{
+
+    width:220px;
+
+    height:70px;
+
+    top:70px;
+
+    left:-240px;
+
+    animation:cloudMove 45s linear infinite;
+
+}
+
+.cloud1::before{
+
+    width:85px;
+
+    height:85px;
+
+    left:25px;
+
+    top:-30px;
+
+}
+
+.cloud1::after{
+
+    width:100px;
+
+    height:100px;
+
+    right:22px;
+
+    top:-38px;
+
+}
+
+
+
+/* CLOUD 2 */
+
+.cloud2{
+
+    width:180px;
+
+    height:60px;
+
+    top:180px;
+
+    left:-250px;
+
+    animation:cloudMove 65s linear infinite;
+
+    animation-delay:-18s;
+
+}
+
+.cloud2::before{
+
+    width:70px;
+
+    height:70px;
+
+    top:-22px;
+
+    left:20px;
+
+}
+
+.cloud2::after{
+
+    width:80px;
+
+    height:80px;
+
+    top:-28px;
+
+    right:18px;
+
+}
+
+
+
+/* CLOUD 3 */
+
+.cloud3{
+
+    width:260px;
+
+    height:80px;
+
+    top:300px;
+
+    left:-300px;
+
+    animation:cloudMove 85s linear infinite;
+
+    animation-delay:-30s;
+
+}
+
+.cloud3::before{
+
+    width:90px;
+
+    height:90px;
+
+    top:-28px;
+
+    left:35px;
+
+}
+
+.cloud3::after{
+
+    width:110px;
+
+    height:110px;
+
+    top:-40px;
+
+    right:30px;
+
+}
+
+
+
+/*==============================
+        NAVBAR
+==============================*/
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:18px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(25,83,170,.18);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    z-index:999;
+
+}
+
+
+
+.logo{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+
+    gap:28px;
+
+    list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+
+
+nav ul li a:hover,
+
+nav ul li a.active{
+
+    color:#dff5ff;
+
+}
+
+
+
+/*==============================
+            HERO
+==============================*/
+
+.hero{
+
+    padding-top:170px;
+
+    padding-bottom:100px;
+
+    text-align:center;
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:78px;
+
+    margin-bottom:20px;
+
+    text-shadow:
+
+    0 10px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+.hero p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#eef8ff;
+
+}
+
+
+
+/*==============================
+        ANIMATION
+==============================*/
+
+@keyframes cloudMove{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(calc(100vw + 450px));
+
+    }
+
+}
+
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+                BLUE MEMORIES
+                memories.css
+                PART 2
+==========================================================*/
+
+
+/*==============================
+        MEMORIES GRID
+==============================*/
+
+.memories-grid{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:40px;
+
+    padding-bottom:120px;
+
+}
+
+
+
+/*==============================
+        MEMORY CARD
+==============================*/
+
+.memory-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    position:relative;
+
+    transition:.45s;
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+/*==============================
+        IMAGE
+==============================*/
+
+.memory-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+
+
+/*==============================
+        CONTENT
+==============================*/
+
+.card-content{
+
+    padding:25px;
+
+    color:#4c5665;
+
+}
+
+
+
+/*==============================
+        DATE
+==============================*/
+
+.card-content .date{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#7aa7d8;
+
+}
+
+
+
+/*==============================
+        TITLE
+==============================*/
+
+.card-content h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    color:#2f5d95;
+
+    margin-bottom:15px;
+
+    transition:.35s;
+
+}
+
+
+
+/*==============================
+        DESCRIPTION
+==============================*/
+
+.card-content p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#667588;
+
+}
+
+
+
+/*==============================
+        POLAROID EFFECT
+==============================*/
+
+.memory-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.75);
+
+    box-shadow:
+
+        0 0 10px rgba(255,255,255,.6);
+
+}
+
+
+
+/*==============================
+        HOVER
+==============================*/
+
+.memory-card:hover{
+
+    transform:
+
+        translateY(-12px)
+
+        rotate(-1deg);
+
+    box-shadow:
+
+        0 25px 55px rgba(0,0,0,.20);
+
+}
+
+
+
+.memory-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.memory-card:hover h3{
+
+    color:#4aa0ff;
+
+}
+
+
+
+/*==============================
+        SHINE EFFECT
+==============================*/
+
+.memory-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.45),
+
+        transparent
+
+    );
+
+    transform:skewX(-20deg);
+
+}
+
+
+
+.memory-card:hover::after{
+
+    animation:shine 1s;
+
+}
+
+
+
+/*==============================
+        IMAGE OVERLAY
+==============================*/
+
+.memory-card img{
+
+    position:relative;
+
+}
+
+
+
+.memory-card:hover img{
+
+    filter:
+
+    brightness(1.05)
+
+    saturate(1.1);
+
+}
+
+
+
+/*==============================
+        CARD BORDER
+==============================*/
+
+.memory-card{
+
+    border:8px solid #ffffff;
+
+}
+
+
+
+/*==============================
+        SMALL TAG
+==============================*/
+
+.memory-card .date::before{
+
+    content:"📅 ";
+
+}
+
+
+
+/*==============================
+        SHINE ANIMATION
+==============================*/
+
+@keyframes shine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:150%;
+
+    }
+
+}
+
+
+
+/*==============================
+        FADE
+==============================*/
+
+.memory-card{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+}
+
+
+
+.memory-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:
+
+    opacity .8s ease,
+
+    transform .8s ease;
+
+}
+
+/*==========================================================
+                BLUE MEMORIES
+                memories.css
+                PART 3
+==========================================================*/
+
+
+/*==============================
+            MODAL
+==============================*/
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.72);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.45s;
+
+    z-index:9999;
+
+}
+
+.modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+
+/*==============================
+        MODAL CONTENT
+==============================*/
+
+.modal-content{
+
+    width:90%;
+
+    max-width:900px;
+
+    background:#fdfbf7;
+
+    color:#4d5666;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    animation:modalShow .45s ease;
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.35);
+
+}
+
+
+
+/*==============================
+        IMAGE
+==============================*/
+
+.modal-content img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+}
+
+
+
+/*==============================
+        TEXT
+==============================*/
+
+.modal-content h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:46px;
+
+    color:#2c5f9b;
+
+    margin:35px 45px 10px;
+
+}
+
+
+
+#modalDate{
+
+    margin:0 45px;
+
+    color:#7ea8d5;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+
+
+#modalStory{
+
+    margin:30px 45px 45px;
+
+    font-size:17px;
+
+    line-height:2;
+
+    color:#5e6877;
+
+}
+
+
+
+/*==============================
+        CLOSE BUTTON
+==============================*/
+
+.close{
+
+    position:absolute;
+
+    top:20px;
+
+    right:25px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.95);
+
+    color:#2d6fca;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+
+        0 8px 20px rgba(0,0,0,.15);
+
+}
+
+
+
+.close:hover{
+
+    transform:rotate(90deg);
+
+    background:white;
+
+}
+
+
+
+/*==============================
+        MODAL SCROLL
+==============================*/
+
+.modal-content{
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+}
+
+
+
+/*==============================
+        QUOTE
+==============================*/
+
+.quote{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:20px auto 120px;
+
+    text-align:center;
+
+}
+
+
+
+.quote h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:38px;
+
+    font-weight:500;
+
+    line-height:1.8;
+
+    color:white;
+
+    text-shadow:
+
+        0 8px 25px rgba(0,0,0,.18);
+
+}
+
+
+
+/*==============================
+        MODAL ANIMATION
+==============================*/
+
+@keyframes modalShow{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            translateY(40px)
+
+            scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            translateY(0)
+
+            scale(1);
+
+    }
+
+}
+
+
+
+/*==============================
+        HOVER IMAGE
+==============================*/
+
+.modal-content img{
+
+    transition:.5s;
+
+}
+
+
+
+.modal-content img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+/*==============================
+        PAPER EFFECT
+==============================*/
+
+.modal-content::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+
+        rgba(0,0,0,.02),
+
+        transparent 75%
+
+    );
+
+    pointer-events:none;
+
+}
+
+
+
+/*==============================
+        DIVIDER
+==============================*/
+
+#modalStory::before{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:3px;
+
+    background:#6eaef0;
+
+    border-radius:30px;
+
+    margin-bottom:25px;
+
+}
+
+/*==========================================================
+                BLUE MEMORIES
+                memories.css
+                PART 4 (FINAL)
+==========================================================*/
+
+
+/*==============================
+        FOOTER
+==============================*/
+
+footer{
+
+    margin-top:80px;
+
+    padding:35px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+footer p{
+
+    color:#eef8ff;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/*==============================
+        BACK TO TOP
+==============================*/
+
+.topButton{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#4b97ee;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.35s;
+
+    box-shadow:
+
+        0 12px 25px rgba(0,0,0,.18);
+
+    z-index:999;
+
+}
+
+.showTop{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+.topButton:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/*==============================
+        FADE ANIMATION
+==============================*/
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/*==============================
+        LILY EFFECT
+==============================*/
+
+.lily{
+
+    position:fixed;
+
+    top:-50px;
+
+    font-size:22px;
+
+    pointer-events:none;
+
+    animation:lilyFall linear forwards;
+
+    opacity:.8;
+
+    z-index:-1;
+
+}
+
+@keyframes lilyFall{
+
+    from{
+
+        transform:
+
+            translateY(-50px)
+
+            rotate(0deg);
+
+        opacity:.8;
+
+    }
+
+    to{
+
+        transform:
+
+            translateY(110vh)
+
+            rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/*==============================
+        RESPONSIVE TABLET
+==============================*/
+
+@media(max-width:992px){
+
+.hero h1{
+
+    font-size:64px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.memories-grid{
+
+    gap:30px;
+
+}
+
+.modal-content img{
+
+    height:350px;
+
+}
+
+.modal-content h2{
+
+    font-size:40px;
+
+}
+
+}
+
+
+
+/*==============================
+        RESPONSIVE MOBILE
+==============================*/
+
+@media(max-width:768px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:18px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:16px;
+
+}
+
+.hero{
+
+    padding-top:160px;
+
+}
+
+.hero h1{
+
+    font-size:50px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.memories-grid{
+
+    width:92%;
+
+}
+
+.memory-card img{
+
+    height:220px;
+
+}
+
+.card-content{
+
+    padding:20px;
+
+}
+
+.card-content h3{
+
+    font-size:28px;
+
+}
+
+.modal-content{
+
+    width:95%;
+
+}
+
+.modal-content img{
+
+    height:240px;
+
+}
+
+.modal-content h2{
+
+    margin:25px;
+
+    font-size:34px;
+
+}
+
+#modalDate{
+
+    margin:0 25px;
+
+}
+
+#modalStory{
+
+    margin:25px;
+
+    font-size:16px;
+
+}
+
+.quote h2{
+
+    font-size:30px;
+
+}
+
+}
+
+
+
+/*==============================
+        EXTRA SMALL
+==============================*/
+
+@media(max-width:480px){
+
+.logo{
+
+    font-size:24px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.memory-card{
+
+    border-width:6px;
+
+}
+
+.memory-card img{
+
+    height:200px;
+
+}
+
+.card-content h3{
+
+    font-size:24px;
+
+}
+
+.card-content p{
+
+    font-size:14px;
+
+}
+
+.modal-content img{
+
+    height:200px;
+
+}
+
+.modal-content h2{
+
+    font-size:30px;
+
+}
+
+#modalStory{
+
+    line-height:1.8;
+
+}
+
+.quote h2{
+
+    font-size:24px;
+
+}
+
+.topButton{
+
+    width:48px;
+
+    height:48px;
+
+}
+
+}
+
+
+
+/*==============================
+        HOVER EFFECT
+==============================*/
+
+nav a:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.memory-card{
+
+    will-change:transform;
+
+}
+
+.memory-card img{
+
+    will-change:transform;
+
+}
+
+
+
+/*==============================
+        SMOOTH TRANSITION
+==============================*/
+
+body,
+.memory-card,
+.modal-content,
+button,
+nav a{
+
+    transition:.35s;
+
+}
+
+
+
+/*==============================
+        IMAGE LOADING
+==============================*/
+
+.memory-card img{
+
+    background:#d9ecff;
+
+}
+
+
+
+/*==============================
+        TEXT SELECTION
+==============================*/
+
+::selection{
+
+    background:#9fd6ff;
+
+    color:#1d4f87;
+
+}
+
+
+
+/*==============================
+        THE END
+==============================*/

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memories | Blue Memories</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/memories.css">
+
+</head>
+
+<body>
+
+    <!-- =============================
+            BACKGROUND
+    ============================== -->
+
+    <div class="background">
+
+        <div class="cloud cloud1"></div>
+
+        <div class="cloud cloud2"></div>
+
+        <div class="cloud cloud3"></div>
+
+        <div class="overlay"></div>
+
+    </div>
+
+    <!-- =============================
+            NAVBAR
+    ============================== -->
+
+    <nav>
+
+        <div class="logo">
+
+            💙 Blue Memories
+
+        </div>
+
+        <ul>
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="timeline.html">Timeline</a></li>
+
+            <li><a class="active" href="memories.html">Memories</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="poetry.html">Poetry</a></li>
+
+            <li><a href="letters.html">Letters</a></li>
+
+            <li><a href="music.html">Music</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- =============================
+            HERO
+    ============================== -->
+
+    <section class="hero">
+
+        <h1>
+
+            Memories
+
+        </h1>
+
+        <p>
+
+            Every memory has its own sky,<br>
+
+            its own story, and its own feeling.
+
+        </p>
+
+    </section>
+
+    <!-- =============================
+            MEMORIES GRID
+    ============================== -->
+
+    <section class="memories-grid">
+
+        <!-- Memory 1 -->
+
+        <div class="memory-card" data-id="1">
+
+            <img src="img/memories/memory1.jpg" alt="Memory 1">
+
+            <div class="card-content">
+
+                <span class="date">
+
+                    28 June 2025
+
+                </span>
+
+                <h3>
+
+                    A Beginning
+
+                </h3>
+
+                <p>
+
+                    Every beautiful story always starts from a simple hello.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Memory 2 -->
+
+        <div class="memory-card" data-id="2">
+
+            <img src="img/memories/memory2.jpg" alt="Memory 2">
+
+            <div class="card-content">
+
+                <span class="date">
+
+                    Blue Afternoon
+
+                </span>
+
+                <h3>
+
+                    Under The Same Sky
+
+                </h3>
+
+                <p>
+
+                    The sky looked ordinary until someone made it unforgettable.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Memory 3 -->
+
+        <div class="memory-card" data-id="3">
+
+            <img src="img/memories/memory3.jpg" alt="Memory 3">
+
+            <div class="card-content">
+
+                <span class="date">
+
+                    Beach Day
+
+                </span>
+
+                <h3>
+
+                    Ocean Breeze
+
+                </h3>
+
+                <p>
+
+                    The waves never stopped, just like the memories.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Memory 4 -->
+
+        <div class="memory-card" data-id="4">
+
+            <img src="img/memories/memory4.jpg" alt="Memory 4">
+
+            <div class="card-content">
+
+                <span class="date">
+
+                    Lily Garden
+
+                </span>
+
+                <h3>
+
+                    White Flowers
+
+                </h3>
+
+                <p>
+
+                    Among the lilies, silence became the most beautiful conversation.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Memory 5 -->
+
+        <div class="memory-card" data-id="5">
+
+            <img src="img/memories/memory5.jpg" alt="Memory 5">
+
+            <div class="card-content">
+
+                <span class="date">
+
+                    Sunset
+
+                </span>
+
+                <h3>
+
+                    Golden Hour
+
+                </h3>
+
+                <p>
+
+                    Some sunsets never truly end inside our hearts.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Memory 6 -->
+
+        <div class="memory-card" data-id="6">
+
+            <img src="img/memories/memory6.jpg" alt="Memory 6">
+
+            <div class="card-content">
+
+                <span class="date">
+
+                    Blue Night
+
+                </span>
+
+                <h3>
+
+                    The Last Page
+
+                </h3>
+
+                <p>
+
+                    Some memories stay, even when time quietly moves on.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =============================
+            MEMORY MODAL
+    ============================== -->
+
+    <div class="modal" id="memoryModal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <img id="modalImage" src="" alt="Memory">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDate"></p>
+
+            <p id="modalStory"></p>
+
+        </div>
+
+    </div>
+
+    <!-- =============================
+            QUOTE
+    ============================== -->
+
+    <section class="quote">
+
+        <h2>
+
+            "Not every memory asks to be remembered.
+
+            Some simply wait quietly until the right moment."
+
+        </h2>
+
+    </section>
+
+    <!-- =============================
+            FOOTER
+    ============================== -->
+
+    <footer>
+
+        <p>
+
+            Blue Memories © 2026
+
+        </p>
+
+    </footer>
+
+    <script src="js/memories.js"></script>
+
+</body>
+
+</html>
