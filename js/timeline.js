@@ -143,7 +143,7 @@ links.forEach(link=>{
 
     if(link.href===window.location.href){
 
-        link.style.color="#dff7ff";
+        link.style.color="#080808";
 
         link.style.fontWeight="600";
 
