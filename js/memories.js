@@ -49,7 +49,7 @@ title:"The Moment You Didn't Notice",
 
 date:"mirror selfie",
 
-image:"img/memories/memory3.JPG",
+image:"img/memories/memory4.JPG",
 
 story:"Aku tak pernah meminta dirimu untuk menoleh ke arah kamera. Justru saat kau tenggelam dalam duniamu sendiri, aku menemukan momen yang paling nyata. Tanpa pose, tanpa senyum yang dipersiapkan, hanya dirimu yang apa adanya. Dan mungkin, keindahan memang selalu lahir dari hal-hal yang tak disengaja."
 
