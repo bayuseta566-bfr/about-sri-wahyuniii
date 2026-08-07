@@ -80,7 +80,7 @@ story:"Wow, sangar banget pose-nya, Queen. Tapi anehnya, sesangar apa pun ekspre
 6:{
 title:"The Last Page",
 
-date:"Tumbler Biru",
+date:"Tumbler Biruu",
 
 image:"img/memories/memory6.JPG",
 
