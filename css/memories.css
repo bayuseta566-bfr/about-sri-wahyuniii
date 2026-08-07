@@ -1,7 +1,7 @@
 /*==========================================================
-    BLUE MEMORIES
-    LETTERS.CSS
-    PART 1
+                BLUE MEMORIES
+                memories.css
+                PART 1
 ==========================================================*/
 
 
@@ -9,7 +9,7 @@
         GOOGLE FONT
 ==============================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
 
 /*==============================
@@ -17,41 +17,35 @@
 ==============================*/
 
 *{
-
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
-
 }
 
 html{
-
     scroll-behavior:smooth;
-
 }
 
 body{
 
     font-family:'Poppins',sans-serif;
 
-    color:#ffffff;
-
     overflow-x:hidden;
 
     min-height:100vh;
 
-    background:linear-gradient(
+    color:white;
+
+    background:
+    linear-gradient(
         180deg,
-        #8ecbff 0%,
-        #71b8f7 35%,
-        #4f96e7 70%,
-        #2f72d1 100%
+        #9fd7ff 0%,
+        #77c0ff 35%,
+        #4fa4f3 70%,
+        #2d7fe4 100%
     );
 
 }
-
 
 
 /*==============================
@@ -66,21 +60,21 @@ body{
 
 ::-webkit-scrollbar-track{
 
-    background:#e8f6ff;
+    background:#d9f0ff;
 
 }
 
 ::-webkit-scrollbar-thumb{
 
-    background:#5eaaf4;
+    background:#5daff7;
 
-    border-radius:30px;
+    border-radius:20px;
 
 }
 
 ::-webkit-scrollbar-thumb:hover{
 
-    background:#3b8ee7;
+    background:#338ce8;
 
 }
 
@@ -98,17 +92,17 @@ body{
 
     overflow:hidden;
 
-    z-index:-10;
+    z-index:-100;
 
 }
 
 
 
 /*==============================
-        LIGHT EFFECT
+        LIGHT OVERLAY
 ==============================*/
 
-.gradient{
+.overlay{
 
     position:absolute;
 
@@ -116,18 +110,25 @@ body{
 
     background:
 
-    radial-gradient(circle at top left,
+    radial-gradient(
 
-    rgba(255,255,255,.22),
+        circle at top left,
 
-    transparent 35%),
+        rgba(255,255,255,.25),
 
+        transparent 35%
 
-    radial-gradient(circle at bottom right,
+    ),
 
-    rgba(255,255,255,.12),
+    radial-gradient(
 
-    transparent 45%);
+        circle at bottom right,
+
+        rgba(255,255,255,.12),
+
+        transparent 45%
+
+    );
 
 }
 
@@ -141,7 +142,9 @@ body{
 
     position:absolute;
 
-    background:rgba(255,255,255,.72);
+    background:
+
+    rgba(255,255,255,.72);
 
     border-radius:100px;
 
@@ -169,13 +172,13 @@ body{
 
 .cloud1{
 
-    width:180px;
+    width:220px;
 
-    height:60px;
+    height:70px;
 
-    top:90px;
+    top:70px;
 
-    left:-220px;
+    left:-240px;
 
     animation:cloudMove 45s linear infinite;
 
@@ -183,25 +186,25 @@ body{
 
 .cloud1::before{
 
-    width:75px;
+    width:85px;
 
-    height:75px;
+    height:85px;
 
-    top:-28px;
+    left:25px;
 
-    left:22px;
+    top:-30px;
 
 }
 
 .cloud1::after{
 
-    width:90px;
+    width:100px;
 
-    height:90px;
+    height:100px;
 
-    top:-35px;
+    right:22px;
 
-    right:18px;
+    top:-38px;
 
 }
 
@@ -211,41 +214,41 @@ body{
 
 .cloud2{
 
-    width:220px;
+    width:180px;
 
-    height:70px;
+    height:60px;
 
-    top:200px;
+    top:180px;
 
-    left:-280px;
+    left:-250px;
 
-    animation:cloudMove 60s linear infinite;
+    animation:cloudMove 65s linear infinite;
 
-    animation-delay:-15s;
+    animation-delay:-18s;
 
 }
 
 .cloud2::before{
 
-    width:85px;
+    width:70px;
 
-    height:85px;
+    height:70px;
 
-    top:-30px;
+    top:-22px;
 
-    left:25px;
+    left:20px;
 
 }
 
 .cloud2::after{
 
-    width:95px;
+    width:80px;
 
-    height:95px;
+    height:80px;
 
-    top:-36px;
+    top:-28px;
 
-    right:24px;
+    right:18px;
 
 }
 
@@ -255,48 +258,48 @@ body{
 
 .cloud3{
 
-    width:160px;
+    width:260px;
 
-    height:55px;
+    height:80px;
 
-    top:150px;
+    top:300px;
 
-    left:-180px;
+    left:-300px;
 
-    animation:cloudMove 75s linear infinite;
+    animation:cloudMove 85s linear infinite;
 
-    animation-delay:-35s;
+    animation-delay:-30s;
 
 }
 
 .cloud3::before{
 
-    width:65px;
+    width:90px;
 
-    height:65px;
+    height:90px;
 
-    top:-22px;
+    top:-28px;
 
-    left:18px;
+    left:35px;
 
 }
 
 .cloud3::after{
 
-    width:80px;
+    width:110px;
 
-    height:80px;
+    height:110px;
 
-    top:-30px;
+    top:-40px;
 
-    right:18px;
+    right:30px;
 
 }
 
 
 
 /*==============================
-            NAVBAR
+        NAVBAR
 ==============================*/
 
 nav{
@@ -317,7 +320,7 @@ nav{
 
     align-items:center;
 
-    background:rgba(27,83,163,.20);
+    background:rgba(25,83,170,.18);
 
     backdrop-filter:blur(18px);
 
@@ -327,6 +330,8 @@ nav{
 
 }
 
+
+
 .logo{
 
     font-family:'Cormorant Garamond',serif;
@@ -335,35 +340,43 @@ nav{
 
     font-weight:700;
 
-    color:#ffffff;
+    color:white;
 
 }
+
+
 
 nav ul{
 
     display:flex;
 
-    list-style:none;
-
     gap:28px;
 
+    list-style:none;
+
 }
+
+
 
 nav ul li a{
 
+    color:white;
+
     text-decoration:none;
 
-    color:#ffffff;
+    transition:.3s;
 
-    transition:.35s;
+    font-size:15px;
 
 }
+
+
 
 nav ul li a:hover,
 
 nav ul li a.active{
 
-    color:#dff6ff;
+    color:#dff5ff;
 
 }
 
@@ -375,7 +388,9 @@ nav ul li a.active{
 
 .hero{
 
-    padding:170px 10% 100px;
+    padding-top:170px;
+
+    padding-bottom:100px;
 
     text-align:center;
 
@@ -383,73 +398,31 @@ nav ul li a.active{
 
 }
 
+
+
 .hero h1{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:76px;
+    font-size:78px;
 
-    margin-bottom:15px;
+    margin-bottom:20px;
 
     text-shadow:
 
-    0 10px 30px rgba(0,0,0,.18);
+    0 10px 30px rgba(0,0,0,.15);
 
 }
+
+
 
 .hero p{
 
     font-size:20px;
 
-    line-height:2;
+    line-height:1.9;
 
     color:#eef8ff;
-
-    margin-bottom:45px;
-
-}
-
-
-
-/*==============================
-        BUTTON
-==============================*/
-
-#openLetter{
-
-    border:none;
-
-    padding:16px 42px;
-
-    border-radius:40px;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    color:#2d70cb;
-
-    background:#ffffff;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-    box-shadow:
-
-    0 12px 28px rgba(0,0,0,.18);
-
-}
-
-#openLetter:hover{
-
-    transform:
-
-    translateY(-4px);
-
-    box-shadow:
-
-    0 20px 35px rgba(0,0,0,.22);
 
 }
 
@@ -483,7 +456,7 @@ nav ul li a.active{
 
         opacity:0;
 
-        transform:translateY(40px);
+        transform:translateY(50px);
 
     }
 
@@ -498,17 +471,385 @@ nav ul li a.active{
 }
 
 /*==========================================================
-    BLUE MEMORIES
-    LETTERS.CSS
-    PART 2
+                BLUE MEMORIES
+                memories.css
+                PART 2
 ==========================================================*/
 
 
 /*==============================
-        LETTER SECTION
+        MEMORIES GRID
 ==============================*/
 
-.letter-section{
+.memories-grid{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:40px;
+
+    padding-bottom:120px;
+
+}
+
+
+
+/*==============================
+        MEMORY CARD
+==============================*/
+
+.memory-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    position:relative;
+
+    transition:.45s;
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+/*==============================
+        IMAGE
+==============================*/
+
+.memory-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+
+
+/*==============================
+        CONTENT
+==============================*/
+
+.card-content{
+
+    padding:25px;
+
+    color:#4c5665;
+
+}
+
+
+
+/*==============================
+        DATE
+==============================*/
+
+.card-content .date{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#7aa7d8;
+
+}
+
+
+
+/*==============================
+        TITLE
+==============================*/
+
+.card-content h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    color:#2f5d95;
+
+    margin-bottom:15px;
+
+    transition:.35s;
+
+}
+
+
+
+/*==============================
+        DESCRIPTION
+==============================*/
+
+.card-content p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#667588;
+
+}
+
+
+
+/*==============================
+        POLAROID EFFECT
+==============================*/
+
+.memory-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.75);
+
+    box-shadow:
+
+        0 0 10px rgba(255,255,255,.6);
+
+}
+
+
+
+/*==============================
+        HOVER
+==============================*/
+
+.memory-card:hover{
+
+    transform:
+
+        translateY(-12px)
+
+        rotate(-1deg);
+
+    box-shadow:
+
+        0 25px 55px rgba(0,0,0,.20);
+
+}
+
+
+
+.memory-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.memory-card:hover h3{
+
+    color:#4aa0ff;
+
+}
+
+
+
+/*==============================
+        SHINE EFFECT
+==============================*/
+
+.memory-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.45),
+
+        transparent
+
+    );
+
+    transform:skewX(-20deg);
+
+}
+
+
+
+.memory-card:hover::after{
+
+    animation:shine 1s;
+
+}
+
+
+
+/*==============================
+        IMAGE OVERLAY
+==============================*/
+
+.memory-card img{
+
+    position:relative;
+
+}
+
+
+
+.memory-card:hover img{
+
+    filter:
+
+    brightness(1.05)
+
+    saturate(1.1);
+
+}
+
+
+
+/*==============================
+        CARD BORDER
+==============================*/
+
+.memory-card{
+
+    border:8px solid #ffffff;
+
+}
+
+
+
+/*==============================
+        SMALL TAG
+==============================*/
+
+.memory-card .date::before{
+
+    content:"📅 ";
+
+}
+
+
+
+/*==============================
+        SHINE ANIMATION
+==============================*/
+
+@keyframes shine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:150%;
+
+    }
+
+}
+
+
+
+/*==============================
+        FADE
+==============================*/
+
+.memory-card{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+}
+
+
+
+.memory-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:
+
+    opacity .8s ease,
+
+    transform .8s ease;
+
+}
+
+/*==========================================================
+                BLUE MEMORIES
+                memories.css
+                PART 3
+==========================================================*/
+
+
+/*==============================
+            MODAL
+==============================*/
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.72);
+
+    backdrop-filter:blur(10px);
 
     display:flex;
 
@@ -516,67 +857,283 @@ nav ul li a.active{
 
     align-items:center;
 
-    padding:20px 10% 120px;
-
-}
-
-
-
-/*==============================
-        LETTER PAPER
-==============================*/
-
-.letter{
-
-    width:100%;
-
-    max-width:760px;
-
-    background:#fdfbf6;
-
-    color:#3b4656;
-
-    border-radius:18px;
-
-    padding:70px 65px;
-
-    box-shadow:
-
-        0 25px 60px rgba(0,0,0,.18);
-
-    position:relative;
-
     opacity:0;
 
-    transform:translateY(70px);
+    visibility:hidden;
 
-    transition:1s ease;
+    transition:.45s;
 
-    overflow:hidden;
+    z-index:9999;
 
 }
 
-
-
-/*==============================
-        SHOW LETTER
-==============================*/
-
-.letter.show{
+.modal.show{
 
     opacity:1;
 
-    transform:translateY(0);
+    visibility:visible;
 
 }
 
 
 
 /*==============================
-        PAPER TEXTURE
+        MODAL CONTENT
 ==============================*/
 
-.letter::before{
+.modal-content{
+
+    width:90%;
+
+    max-width:900px;
+
+    background:#fdfbf7;
+
+    color:#4d5666;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    animation:modalShow .45s ease;
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.35);
+
+}
+
+
+
+/*==============================
+        IMAGE
+==============================*/
+
+.modal-content img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+}
+
+
+
+/*==============================
+        TEXT
+==============================*/
+
+.modal-content h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:46px;
+
+    color:#2c5f9b;
+
+    margin:35px 45px 10px;
+
+}
+
+
+
+#modalDate{
+
+    margin:0 45px;
+
+    color:#7ea8d5;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+
+
+#modalStory{
+
+    margin:30px 45px 45px;
+
+    font-size:17px;
+
+    line-height:2;
+
+    color:#5e6877;
+
+}
+
+
+
+/*==============================
+        CLOSE BUTTON
+==============================*/
+
+.close{
+
+    position:absolute;
+
+    top:20px;
+
+    right:25px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.95);
+
+    color:#2d6fca;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+
+        0 8px 20px rgba(0,0,0,.15);
+
+}
+
+
+
+.close:hover{
+
+    transform:rotate(90deg);
+
+    background:white;
+
+}
+
+
+
+/*==============================
+        MODAL SCROLL
+==============================*/
+
+.modal-content{
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+}
+
+
+
+/*==============================
+        QUOTE
+==============================*/
+
+.quote{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:20px auto 120px;
+
+    text-align:center;
+
+}
+
+
+
+.quote h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:38px;
+
+    font-weight:500;
+
+    line-height:1.8;
+
+    color:white;
+
+    text-shadow:
+
+        0 8px 25px rgba(0,0,0,.18);
+
+}
+
+
+
+/*==============================
+        MODAL ANIMATION
+==============================*/
+
+@keyframes modalShow{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            translateY(40px)
+
+            scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            translateY(0)
+
+            scale(1);
+
+    }
+
+}
+
+
+
+/*==============================
+        HOVER IMAGE
+==============================*/
+
+.modal-content img{
+
+    transition:.5s;
+
+}
+
+
+
+.modal-content img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+/*==============================
+        PAPER EFFECT
+==============================*/
+
+.modal-content::before{
 
     content:"";
 
@@ -590,7 +1147,7 @@ nav ul li a.active{
 
         rgba(0,0,0,.02),
 
-        transparent 70%
+        transparent 75%
 
     );
 
@@ -600,246 +1157,42 @@ nav ul li a.active{
 
 
 
-.letter::after{
+/*==============================
+        DIVIDER
+==============================*/
+
+#modalStory::before{
 
     content:"";
 
-    position:absolute;
+    display:block;
 
-    top:0;
+    width:80px;
 
-    left:55px;
+    height:3px;
 
-    width:2px;
+    background:#6eaef0;
 
-    height:100%;
-
-    background:rgba(95,150,220,.12);
-
-}
-
-
-
-/*==============================
-        DATE
-==============================*/
-
-.letter-date{
-
-    font-size:14px;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-    color:#7d8ea8;
+    border-radius:30px;
 
     margin-bottom:25px;
 
 }
 
-
-
-/*==============================
-        TITLE
-==============================*/
-
-.letter h2{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:52px;
-
-    font-weight:600;
-
-    color:#305f98;
-
-    margin-bottom:35px;
-
-}
-
-
-
-/*==============================
-        CONTENT
-==============================*/
-
-.letter p{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:28px;
-
-    line-height:2;
-
-    color:#505b68;
-
-    text-align:justify;
-
-}
-
-
-
-/*==============================
-        DROP CAP
-==============================*/
-
-.letter p::first-letter{
-
-    float:left;
-
-    font-size:72px;
-
-    line-height:60px;
-
-    padding-right:10px;
-
-    color:#5f9be4;
-
-    font-weight:700;
-
-}
-
-
-
-/*==============================
-        SIGNATURE
-==============================*/
-
-.signature{
-
-    margin-top:60px;
-
-    text-align:right;
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:30px;
-
-    color:#4b6d99;
-
-    line-height:1.8;
-
-}
-
-
-
-.signature span{
-
-    font-size:36px;
-
-    font-weight:600;
-
-}
-
-
-
-/*==============================
-        QUOTE
-==============================*/
-
-.quote{
-
-    padding:0 10% 120px;
-
-    text-align:center;
-
-}
-
-
-
-.quote p{
-
-    max-width:760px;
-
-    margin:auto;
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:34px;
-
-    line-height:1.8;
-
-    color:white;
-
-    text-shadow:
-
-        0 8px 25px rgba(0,0,0,.20);
-
-}
-
-
-
-/*==============================
-        LETTER HOVER
-==============================*/
-
-.letter:hover{
-
-    transform:
-
-        translateY(-8px);
-
-    box-shadow:
-
-        0 35px 80px rgba(0,0,0,.22);
-
-}
-
-
-
-/*==============================
-        BUTTON AFTER OPEN
-==============================*/
-
-#openLetter.hide{
-
-    opacity:0;
-
-    pointer-events:none;
-
-    transform:translateY(-20px);
-
-}
-
-
-
-/*==============================
-        FADE EFFECT
-==============================*/
-
-.fade{
-
-    opacity:0;
-
-    transform:translateY(50px);
-
-    transition:1s;
-
-}
-
-
-
-.fade.show{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
 /*==========================================================
-    BLUE MEMORIES
-    LETTERS.CSS
-    PART 3 (FINAL)
+                BLUE MEMORIES
+                memories.css
+                PART 4 (FINAL)
 ==========================================================*/
 
 
 /*==============================
-            FOOTER
+        FOOTER
 ==============================*/
 
 footer{
+
+    margin-top:80px;
 
     padding:35px;
 
@@ -885,7 +1238,7 @@ footer p{
 
     border-radius:50%;
 
-    background:#4c96ee;
+    background:#4b97ee;
 
     color:white;
 
@@ -901,7 +1254,7 @@ footer p{
 
     box-shadow:
 
-    0 12px 25px rgba(0,0,0,.20);
+        0 12px 25px rgba(0,0,0,.18);
 
     z-index:999;
 
@@ -924,7 +1277,31 @@ footer p{
 
 
 /*==============================
-        FLOATING LILY
+        FADE ANIMATION
+==============================*/
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/*==============================
+        LILY EFFECT
 ==============================*/
 
 .lily{
@@ -933,15 +1310,13 @@ footer p{
 
     top:-50px;
 
-    width:24px;
-
-    height:24px;
+    font-size:22px;
 
     pointer-events:none;
 
-    opacity:.75;
-
     animation:lilyFall linear forwards;
+
+    opacity:.8;
 
     z-index:-1;
 
@@ -953,11 +1328,11 @@ footer p{
 
         transform:
 
-        translateY(-50px)
+            translateY(-50px)
 
-        rotate(0deg);
+            rotate(0deg);
 
-        opacity:.9;
+        opacity:.8;
 
     }
 
@@ -965,9 +1340,9 @@ footer p{
 
         transform:
 
-        translateY(110vh)
+            translateY(110vh)
 
-        rotate(360deg);
+            rotate(360deg);
 
         opacity:0;
 
@@ -978,94 +1353,48 @@ footer p{
 
 
 /*==============================
-        SOFT SHADOW
+        RESPONSIVE TABLET
 ==============================*/
 
-.hero h1,
-
-.quote p{
-
-    text-shadow:
-
-    0 10px 25px rgba(0,0,0,.18);
-
-}
-
-
-
-/*==============================
-        LETTER SELECTION
-==============================*/
-
-.letter::selection{
-
-    background:#cfe8ff;
-
-    color:#244f85;
-
-}
-
-.letter *::selection{
-
-    background:#cfe8ff;
-
-    color:#244f85;
-
-}
-
-
-
-/*==============================
-        SMOOTH EFFECT
-==============================*/
-
-body,
-
-.letter,
-
-button,
-
-nav a{
-
-    transition:.35s;
-
-}
-
-
-
-/*==============================
-        RESPONSIVE
-==============================*/
-
-@media(max-width:1000px){
+@media(max-width:992px){
 
 .hero h1{
 
-    font-size:60px;
+    font-size:64px;
 
 }
 
-.letter{
+.hero p{
 
-    padding:60px 45px;
-
-}
-
-.letter h2{
-
-    font-size:46px;
+    font-size:18px;
 
 }
 
-.letter p{
+.memories-grid{
 
-    font-size:25px;
+    gap:30px;
+
+}
+
+.modal-content img{
+
+    height:350px;
+
+}
+
+.modal-content h2{
+
+    font-size:40px;
 
 }
 
 }
 
 
+
+/*==============================
+        RESPONSIVE MOBILE
+==============================*/
 
 @media(max-width:768px){
 
@@ -1085,87 +1414,111 @@ nav ul{
 
     justify-content:center;
 
-    gap:18px;
+    gap:16px;
 
 }
 
 .hero{
 
-    padding:160px 8% 80px;
+    padding-top:160px;
 
 }
 
 .hero h1{
 
-    font-size:48px;
+    font-size:50px;
 
 }
 
 .hero p{
 
-    font-size:17px;
+    font-size:16px;
 
 }
 
-.letter{
+.memories-grid{
 
-    padding:45px 35px;
-
-}
-
-.letter::after{
-
-    left:35px;
+    width:92%;
 
 }
 
-.letter h2{
+.memory-card img{
 
-    font-size:40px;
-
-}
-
-.letter p{
-
-    font-size:22px;
-
-    line-height:1.9;
+    height:220px;
 
 }
 
-.signature{
+.card-content{
 
-    font-size:24px;
-
-}
-
-.signature span{
-
-    font-size:30px;
+    padding:20px;
 
 }
 
-.quote p{
+.card-content h3{
 
     font-size:28px;
 
 }
 
+.modal-content{
+
+    width:95%;
+
+}
+
+.modal-content img{
+
+    height:240px;
+
+}
+
+.modal-content h2{
+
+    margin:25px;
+
+    font-size:34px;
+
+}
+
+#modalDate{
+
+    margin:0 25px;
+
+}
+
+#modalStory{
+
+    margin:25px;
+
+    font-size:16px;
+
+}
+
+.quote h2{
+
+    font-size:30px;
+
+}
+
 }
 
 
 
-@media(max-width:520px){
+/*==============================
+        EXTRA SMALL
+==============================*/
+
+@media(max-width:480px){
 
 .logo{
 
-    font-size:26px;
+    font-size:24px;
 
 }
 
 .hero h1{
 
-    font-size:38px;
+    font-size:40px;
 
 }
 
@@ -1175,85 +1528,59 @@ nav ul{
 
 }
 
-#openLetter{
+.memory-card{
 
-    width:100%;
-
-    max-width:260px;
+    border-width:6px;
 
 }
 
-.letter{
+.memory-card img{
 
-    padding:35px 25px;
-
-    border-radius:15px;
+    height:200px;
 
 }
 
-.letter::after{
+.card-content h3{
 
-    left:25px;
-
-}
-
-.letter-date{
-
-    font-size:12px;
+    font-size:24px;
 
 }
 
-.letter h2{
+.card-content p{
 
-    font-size:34px;
+    font-size:14px;
 
 }
 
-.letter p{
+.modal-content img{
 
-    font-size:19px;
+    height:200px;
+
+}
+
+.modal-content h2{
+
+    font-size:30px;
+
+}
+
+#modalStory{
 
     line-height:1.8;
 
 }
 
-.letter p::first-letter{
+.quote h2{
 
-    font-size:54px;
-
-    line-height:45px;
+    font-size:24px;
 
 }
 
-.signature{
+.topButton{
 
-    margin-top:40px;
+    width:48px;
 
-    font-size:20px;
-
-}
-
-.signature span{
-
-    font-size:26px;
-
-}
-
-.quote{
-
-    padding:0 8% 90px;
-
-}
-
-.quote p{
-
-    font-size:22px;
-
-}
-
-footer{
-
-    padding:28px;
+    height:48px;
 
 }
 
@@ -1262,7 +1589,7 @@ footer{
 
 
 /*==============================
-        EXTRA ANIMATION
+        HOVER EFFECT
 ==============================*/
 
 nav a:hover{
@@ -1271,20 +1598,62 @@ nav a:hover{
 
 }
 
-#openLetter:active{
+.memory-card{
 
-    transform:scale(.96);
+    will-change:transform;
 
 }
 
-.letter:hover{
+.memory-card img{
 
-    transition:.4s;
+    will-change:transform;
 
 }
 
 
 
 /*==============================
-        END
+        SMOOTH TRANSITION
+==============================*/
+
+body,
+.memory-card,
+.modal-content,
+button,
+nav a{
+
+    transition:.35s;
+
+}
+
+
+
+/*==============================
+        IMAGE LOADING
+==============================*/
+
+.memory-card img{
+
+    background:#d9ecff;
+
+}
+
+
+
+/*==============================
+        TEXT SELECTION
+==============================*/
+
+::selection{
+
+    background:#9fd6ff;
+
+    color:#1d4f87;
+
+}
+
+
+
+/*==============================
+        THE END
 ==============================*/
