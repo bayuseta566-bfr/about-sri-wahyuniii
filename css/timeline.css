@@ -750,7 +750,7 @@ nav ul li a:hover::after{
         #4baeff
     );
 
-    color:white;
+    color:rgb(8, 8, 8);
 
     font-size:14px;
 
@@ -779,7 +779,7 @@ nav ul li a:hover::after{
 
     margin-bottom:15px;
 
-    color:white;
+    color:rgb(14, 13, 13);
 
 }
 
@@ -790,7 +790,7 @@ nav ul li a:hover::after{
 
 .content p{
 
-    color:#eef9ff;
+    color:#030303;
 
     line-height:1.9;
 
