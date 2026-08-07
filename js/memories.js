@@ -23,68 +23,68 @@ if(localStorage.getItem("blueMemoriesLogin")!=="true"){
 const memories={
 
 1:{
-title:"A Beginning",
+title:"Ketidaksengajaan",
 
-date:"28 June 2025",
+date:"31 oktober 2024",
 
 image:"img/memories/memory1.JPG",
 
-story:"Every beautiful story begins with a simple hello. At that moment nothing extraordinary happened, but later I realized that some of the greatest memories always start from the smallest moments."
+story:"Di sebuah ketidaksengajaan, kita pernah berada dalam satu bingkai, ya, Queen. Bukan foto yang sempurna—aku baru saja keluar dari rumah sakit dan bahkan belum siap untuk berfoto😭🙏. Namun semua itu terasa menghilang, tenggelam oleh indahnya dirimu yang tanpa sadar menjadi pusat dari kenangan ini dan hari itu adalah hari pertama aku mengetahui dan mengenal namamu."
 
 },
 
 2:{
-title:"Under The Same Sky",
+title:"Senyum yang Menawan",
 
-date:"Blue Afternoon",
+date:"a smile",
 
 image:"img/memories/memory2.JPG",
 
-story:"Looking at the same sky from different places somehow makes distance feel smaller. Perhaps the sky remembers everything that we cannot say."
+story:"Saat itu aku hanya seorang yang bertugas mengabadikan jalannya kegiatan. Tak ada niat khusus untuk memotretmu, hingga tanpa sengaja kameraku menangkap senyummu yang begitu menawan. Ketika melihat hasilnya, aku sadar bahwa yang membuat foto ini terasa hidup bukanlah ketajaman lensa atau sempurnanya piksel, melainkan keindahan yang terpancar dari senyummu. Sejak saat itu, foto sederhana ini tak lagi terasa seperti dokumentasi, melainkan sebuah kenangan yang tak dapat ku ulang."
 
 },
 
 3:{
-title:"Ocean Breeze",
+title:"The Moment You Didn't Notice",
 
-date:"Beach Day",
+date:"mirror selfie",
 
 image:"img/memories/memory3.JPG",
 
-story:"The sound of the waves, the smell of the sea, and the endless horizon became witnesses to moments that words could never fully describe."
+story:"Aku tak pernah meminta dirimu untuk menoleh ke arah kamera. Justru saat kau tenggelam dalam duniamu sendiri, aku menemukan momen yang paling nyata. Tanpa pose, tanpa senyum yang dipersiapkan, hanya dirimu yang apa adanya. Dan mungkin, keindahan memang selalu lahir dari hal-hal yang tak disengaja."
 
 },
 
 4:{
-title:"White Flowers",
+title:"When Your Smile Bloomed Again",
 
-date:"Lily Garden",
+date:"PKM HIMAJA 2025",
 
 image:"img/memories/memory4.JPG",
 
-story:"Lilies bloom quietly, yet they leave unforgettable beauty. Some people are just like that."
+story:"Foto ini lucu sekali, ya, Queen. Diambil saat pembagian hadiah, ketika kau bahkan belum sempat benar-benar bersiap di depan kamera. Namun justru ketidaksiapan itu membuatnya terasa begitu nyata. Yang paling indah bukanlah fotonya, melainkan melihat tawamu mulai kembali mekar setelah dunia yang pernah runtuh perlahan mengajarkanmu untuk tersenyum lagi. Semoga senyum itu selalu menemukan alasan untuk tetap tinggal."
 
 },
 
 5:{
-title:"Golden Hour",
+title:"She Fiercest Smile",
 
-date:"Sunset",
+date:"Pose Kecee",
 
 image:"img/memories/memory5.JPG",
 
-story:"Sunsets always remind me that beautiful things sometimes end gently, not suddenly."
+story:"Wow, sangar banget pose-nya, Queen. Tapi anehnya, sesangar apa pun ekspresimu, tetap saja kelihatan kece. Aku selalu mengingat momen ini sebagai campuran antara tawa dan rasa yang sulit dijelaskan. Lucunya lagi, foto ini rasanya cocok dijadikan "ancaman halus" untuk mahasiswa baru saat ospek jurusan. Biar mereka tahu, senior yang kelihatannya galak ternyata menyimpan senyum yang hangat."
 
 },
 
 6:{
 title:"The Last Page",
 
-date:"Blue Night",
+date:"Tumbler Biru",
 
 image:"img/memories/memory6.JPG",
 
-story:"Not every story has a perfect ending, but every memory deserves a place to live forever."
+story:"Ah, foto ini cantik sekali, ya, Queen. Ada tumbler biru kecil yang mungkin terlihat sederhana, tetapi aku tahu warna itu adalah warna kesukaanmu. Hari itu pasti melelahkan, sibuk menemani proses launching produk baru hingga semuanya berjalan dengan baik. Semoga setelah semua kerja keras itu, kamu tidak lupa menjaga dirimu sendiri. Jangan telat makan, jangan lupa minum, dan jangan terlalu sering begadang. Sebab ada banyak orang yang ingin melihatmu tetap sehat, termasuk aku yang berharap kau selalu baik-baik saja."
 
 }
 
