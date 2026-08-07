@@ -67,15 +67,16 @@ story:"Foto ini lucu sekali, ya, Queen. Diambil saat pembagian hadiah, ketika ka
 },
 
 5:{
-title:"he Fiercest Smile",
+title:"She Fiercest Smile",
 
 date:"Pose Kecee",
 
 image:"img/memories/memory5.JPG",
 
-story:"Wow, sangar banget pose-nya, Queen. Tapi anehnya, sesangar apa pun ekspresimu, tetap saja kelihatan kece. Aku selalu mengingat momen ini sebagai campuran antara tawa dan rasa yang sulit dijelaskan. Lucunya lagi, foto ini rasanya cocok dijadikan "ancaman halus" untuk mahasiswa baru saat ospek jurusan. Biar mereka tahu, senior yang kelihatannya galak ternyata menyimpan senyum yang hangat."
+story:"Wow, sangar banget pose-nya, Queen. Tapi anehnya, sesangar apa pun ekspresimu, tetap saja kelihatan kece. Aku selalu mengingat momen ini sebagai campuran antara tawa dan rasa yang sulit dijelaskan. Lucunya lagi, foto ini rasanya cocok dijadikan ancaman halus untuk mahasiswa baru saat ospek jurusan. Biar mereka tahu, senior yang kelihatannya galak ternyata menyimpan senyum yang hangat."
 
 },
+
 
 6:{
 title:"The Last Page",
