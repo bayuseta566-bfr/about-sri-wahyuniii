@@ -27,7 +27,7 @@ title:"A Beginning",
 
 date:"28 June 2025",
 
-image:"img/memories/memory1.jpg",
+image:"img/memories/memory1.JPG",
 
 story:"Every beautiful story begins with a simple hello. At that moment nothing extraordinary happened, but later I realized that some of the greatest memories always start from the smallest moments."
 
@@ -38,7 +38,7 @@ title:"Under The Same Sky",
 
 date:"Blue Afternoon",
 
-image:"img/memories/memory2.jpg",
+image:"img/memories/memory2.JPG",
 
 story:"Looking at the same sky from different places somehow makes distance feel smaller. Perhaps the sky remembers everything that we cannot say."
 
@@ -49,7 +49,7 @@ title:"Ocean Breeze",
 
 date:"Beach Day",
 
-image:"img/memories/memory3.jpg",
+image:"img/memories/memory3.JPG",
 
 story:"The sound of the waves, the smell of the sea, and the endless horizon became witnesses to moments that words could never fully describe."
 
@@ -60,7 +60,7 @@ title:"White Flowers",
 
 date:"Lily Garden",
 
-image:"img/memories/memory4.jpg",
+image:"img/memories/memory4.JPG",
 
 story:"Lilies bloom quietly, yet they leave unforgettable beauty. Some people are just like that."
 
@@ -71,7 +71,7 @@ title:"Golden Hour",
 
 date:"Sunset",
 
-image:"img/memories/memory5.jpg",
+image:"img/memories/memory5.JPG",
 
 story:"Sunsets always remind me that beautiful things sometimes end gently, not suddenly."
 
@@ -82,7 +82,7 @@ title:"The Last Page",
 
 date:"Blue Night",
 
-image:"img/memories/memory6.jpg",
+image:"img/memories/memory6.JPG",
 
 story:"Not every story has a perfect ending, but every memory deserves a place to live forever."
 
