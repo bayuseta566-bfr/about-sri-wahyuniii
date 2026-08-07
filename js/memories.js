@@ -67,7 +67,7 @@ story:"Foto ini lucu sekali, ya, Queen. Diambil saat pembagian hadiah, ketika ka
 },
 
 5:{
-title:"She Fiercest Smile",
+title:"he Fiercest Smile",
 
 date:"Pose Kecee",
 
@@ -80,7 +80,7 @@ story:"Wow, sangar banget pose-nya, Queen. Tapi anehnya, sesangar apa pun ekspre
 6:{
 title:"The Last Page",
 
-date:"Tumbler Biruu",
+date:"Tumbler Biru",
 
 image:"img/memories/memory6.JPG",
 
